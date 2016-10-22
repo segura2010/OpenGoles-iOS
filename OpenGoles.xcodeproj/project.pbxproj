@@ -253,14 +253,17 @@
 				TargetAttributes = {
 					D3F662CC1DBB5A71009A56ED = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HG5KUP66BT;
 						ProvisioningStyle = Automatic;
 					};
 					D3F662EB1DBB6151009A56ED = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HG5KUP66BT;
 						ProvisioningStyle = Automatic;
 					};
 					D3F662F71DBB6151009A56ED = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HG5KUP66BT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -479,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HG5KUP66BT;
 				INFOPLIST_FILE = OpenGoles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = segura.OpenGoles;
@@ -491,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HG5KUP66BT;
 				INFOPLIST_FILE = OpenGoles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = segura.OpenGoles;
@@ -503,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = HG5KUP66BT;
 				INFOPLIST_FILE = "watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = segura.OpenGoles.watchkitapp.watchkitextension;
@@ -519,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = HG5KUP66BT;
 				INFOPLIST_FILE = "watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = segura.OpenGoles.watchkitapp.watchkitextension;
@@ -536,6 +543,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HG5KUP66BT;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = segura.OpenGoles.watchkitapp;
@@ -553,6 +561,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HG5KUP66BT;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = segura.OpenGoles.watchkitapp;

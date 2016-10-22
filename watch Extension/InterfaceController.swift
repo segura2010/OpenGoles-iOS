@@ -83,10 +83,17 @@ class InterfaceController: WKInterfaceController {
                 let local = getShortName(fixtures[i]["teamLocal"] as! String).uppercased()
                 let visitor = getShortName(fixtures[i]["teamVisitor"] as! String).uppercased()
                 
+                let secondsDate = ((fixtures[i]["dateMatch"] as! Int) / 1000) - (3600 * 15) // to seconds and substract 15 hours
+                let matchDate = Date(timeIntervalSince1970: TimeInterval(secondsDate))
+                let formatter = DateFormatter()
+                formatter.dateFormat = "EEEE, HH:mm"
+                let dateStr = formatter.string(from: matchDate)
+                
                 let text = "\(local) \(score!) \(visitor)"
                 
                 
                 row?.matchLbl.setText(text)
+                row?.dateLbl.setText(dateStr)
                 
                 let matchState = fixtures[i]["matchState"] as! Int
                 switch matchState {

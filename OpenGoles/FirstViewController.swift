@@ -13,6 +13,12 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        GolesAPI.sharedInstance.getTournaments(1) { (err, resp) in
+            print(err)
+            print(resp)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

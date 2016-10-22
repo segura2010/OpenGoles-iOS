@@ -8,14 +8,23 @@
 
 import UIKit
 
+import WatchConnectivity
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let session = WCSession.default()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if WCSession.isSupported(){
+            session.delegate = self
+            session.activate()
+        }
+        
         return true
     }
 
@@ -40,7 +49,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
 }
+
+// Watch app Communication
+extension AppDelegate: WCSessionDelegate {
+    /** Called when all delegate callbacks for the previously selected watch has occurred. The session can be re-activated for the now selected watch using activateSession. */
+    @available(iOS 9.3, *)
+    public func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    /** Called when the session can no longer be used to modify or add any new transfers and, all interactive messages will be cancelled, but delegate callbacks for background transfers can still occur. This will happen when the selected watch is being changed. */
+    @available(iOS 9.3, *)
+    public func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    /** Called when the session has completed activation. If session state is WCSessionActivationStateNotActivated there will be an error with more details. */
+    @available(iOS 9.3, *)
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        
+        if let reference = message["league"] as? Int {
+            
+            session.sendMessage(["league":1], replyHandler: nil, errorHandler: nil)
+            
+        }else{
+            session.sendMessage(["error":"nothing"], replyHandler: nil, errorHandler: nil)
+        }
+    }
+    
+}
+
 

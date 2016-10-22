@@ -10,6 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
                     <items>
+                        <label alignment="left" text="Loading.." id="K3f-Jc-XZY"/>
                         <table alignment="left" id="8Ts-Qi-3Vf">
                             <items>
                                 <tableRow identifier="row" id="kCz-yn-PsF" customClass="RowController" customModule="watch_Extension">
@@ -20,6 +21,9 @@
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
                                         </items>
+                                        <connections>
+                                            <segue destination="x17-ty-lkE" kind="push" id="42v-v9-EGE"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="dateLbl" destination="juv-0v-5Ya" id="LOv-qJ-qoe"/>
@@ -30,11 +34,45 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="loadingLbl" destination="K3f-Jc-XZY" id="c94-bP-uku"/>
                         <outlet property="tableView" destination="8Ts-Qi-3Vf" id="zsy-0f-NFE"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="J4L-aa-MsD">
+            <objects>
+                <controller title="Details" id="x17-ty-lkE" customClass="MatchDetailsIC" customModule="watch_Extension">
+                    <items>
+                        <label alignment="left" text="Loading.." id="PaS-GF-tOI"/>
+                        <table alignment="left" id="vbU-Yl-ioj">
+                            <items>
+                                <tableRow identifier="row" id="nWW-SS-Els" customClass="DetailRowController" customModule="watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="H7U-Dh-1gE">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="bottom" text="Label" id="yIm-FZ-iX9">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label alignment="left" text="Label" numberOfLines="5" id="FkD-ut-50S"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="eventDescriptionLbl" destination="FkD-ut-50S" id="bHI-bv-Vth"/>
+                                        <outlet property="eventTimeLbl" destination="yIm-FZ-iX9" id="IR3-G0-lgX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="goalsTable" destination="vbU-Yl-ioj" id="vOf-0N-dEq"/>
+                        <outlet property="loadingLbl" destination="PaS-GF-tOI" id="cZ9-UO-hOZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="463" y="338"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

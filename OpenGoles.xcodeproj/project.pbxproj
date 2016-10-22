@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3157AC41DBBBB86003A7577 /* MatchDetailsIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AC31DBBBB86003A7577 /* MatchDetailsIC.swift */; };
+		D3157AC61DBBBDDD003A7577 /* DetailRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AC51DBBBDDD003A7577 /* DetailRowController.swift */; };
 		D3F662D11DBB5A71009A56ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D01DBB5A71009A56ED /* AppDelegate.swift */; };
 		D3F662D31DBB5A71009A56ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D21DBB5A71009A56ED /* FirstViewController.swift */; };
 		D3F662D51DBB5A71009A56ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D41DBB5A71009A56ED /* SecondViewController.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D3157AC31DBBBB86003A7577 /* MatchDetailsIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsIC.swift; sourceTree = "<group>"; };
+		D3157AC51DBBBDDD003A7577 /* DetailRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRowController.swift; sourceTree = "<group>"; };
 		D3F662CD1DBB5A71009A56ED /* OpenGoles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGoles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F662D01DBB5A71009A56ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3F662D21DBB5A71009A56ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -167,7 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				D3F663131DBB672E009A56ED /* RowController.swift */,
+				D3157AC51DBBBDDD003A7577 /* DetailRowController.swift */,
 				D3F662FF1DBB6151009A56ED /* InterfaceController.swift */,
+				D3157AC31DBBBB86003A7577 /* MatchDetailsIC.swift */,
 				D3F663011DBB6151009A56ED /* ExtensionDelegate.swift */,
 				D3F663031DBB6151009A56ED /* NotificationController.swift */,
 				D3F663051DBB6151009A56ED /* Assets.xcassets */,
@@ -336,8 +342,10 @@
 			files = (
 				D3F663151DBB7179009A56ED /* GolesAPI.swift in Sources */,
 				D3F663041DBB6151009A56ED /* NotificationController.swift in Sources */,
+				D3157AC41DBBBB86003A7577 /* MatchDetailsIC.swift in Sources */,
 				D3F663021DBB6151009A56ED /* ExtensionDelegate.swift in Sources */,
 				D3F663141DBB672E009A56ED /* RowController.swift in Sources */,
+				D3157AC61DBBBDDD003A7577 /* DetailRowController.swift in Sources */,
 				D3F663001DBB6151009A56ED /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +601,7 @@
 				D3F662E31DBB5A71009A56ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3F6630B1DBB6151009A56ED /* Build configuration list for PBXNativeTarget "watch Extension" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +610,7 @@
 				D3F6630D1DBB6151009A56ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3F6630F1DBB6151009A56ED /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +619,7 @@
 				D3F663111DBB6151009A56ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

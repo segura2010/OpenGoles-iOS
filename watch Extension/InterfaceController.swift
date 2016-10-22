@@ -14,6 +14,7 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var tableView: WKInterfaceTable!
+    @IBOutlet var loadingLbl: WKInterfaceLabel!
     
     var fixturesList = [String:AnyObject]()
     
@@ -44,6 +45,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func getNextLeagueFixtures() {
+        self.loadingLbl.setHidden(false)
         GolesAPI.sharedInstance.getNextFixtures(self.leagueId, onCompletion: { (err, resp) in
             if err != nil{
                 print(err)
@@ -56,6 +58,7 @@ class InterfaceController: WKInterfaceController {
                     
                     // Main UI Thread
                     DispatchQueue.main.async(execute: { () -> Void in
+                        self.loadingLbl.setHidden(true)
                         self.reloadTableData()
                     })
                 }
@@ -74,11 +77,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     func reloadTableData(){
-        tableView.setNumberOfRows(fixturesList.count, withRowType: "row")
         
         if let fixtures = fixturesList["fixtureMatchList"] as? [[String:AnyObject]]{
+            tableView.setNumberOfRows(fixtures.count, withRowType: "row")
             for i in (0..<fixtures.count){
-                let score = fixtures[i]["score"]
+                var score = fixtures[i]["score"]
                 let row = tableView.rowController(at: i) as? RowController
                 let local = getShortName(fixtures[i]["teamLocal"] as! String).uppercased()
                 let visitor = getShortName(fixtures[i]["teamVisitor"] as! String).uppercased()
@@ -87,27 +90,42 @@ class InterfaceController: WKInterfaceController {
                 let matchDate = Date(timeIntervalSince1970: TimeInterval(secondsDate))
                 let formatter = DateFormatter()
                 formatter.dateFormat = "EEEE, HH:mm"
-                let dateStr = formatter.string(from: matchDate)
-                
-                let text = "\(local) \(score!) \(visitor)"
-                
-                
-                row?.matchLbl.setText(text)
-                row?.dateLbl.setText(dateStr)
+                var dateStr = formatter.string(from: matchDate)
                 
                 let matchState = fixtures[i]["matchState"] as! Int
                 switch matchState {
                 case MatchState.finished.rawValue:
                     row?.matchLbl.setTextColor(UIColor.red)
                 case MatchState.notStarted.rawValue:
+                    score = "-" as AnyObject?
                     row?.matchLbl.setTextColor(UIColor.white)
                 case MatchState.inGame.rawValue:
+                    dateStr = "\(fixtures[i]["minutes"]!)'"
                     row?.matchLbl.setTextColor(UIColor.yellow)
                 default:
                     row?.matchLbl.setTextColor(UIColor.white)
                 }
+                
+                let text = "\(local) \(score!) \(visitor)"
+                
+                
+                row?.matchLbl.setText(text)
+                row?.dateLbl.setText(dateStr)
             }
         }
+    }
+    
+    // Segue
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+        
+        if let fixtures = fixturesList["fixtureMatchList"] as? [[String:AnyObject]]{
+            if let match = fixtures[rowIndex] as? [String:AnyObject]{
+                return match
+            }
+            return nil
+        }
+        return nil
+        
     }
 
 }

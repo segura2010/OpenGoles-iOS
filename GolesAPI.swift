@@ -16,6 +16,10 @@ enum MatchState:Int{
     case notStarted = 0, inGame = 1, finished = 3
 }
 
+enum EventType:Int{
+    case goal = 2, sustitution = 18, yellowCard = 16, redCard = 3
+}
+
 class GolesAPI {
     static let sharedInstance = GolesAPI()
     
@@ -131,6 +135,13 @@ class GolesAPI {
     {
         let url = "fixture/classification"
         let data = "\(idTournament)"
+        post(data, url: url, onCompletion: onCompletion)
+    }
+    
+    func getEventsByMatch(_ idMatch:Int, onCompletion:@escaping ServiceResponse)
+    {
+        let url = "fixture/eventsByMatch"
+        let data = "\(idMatch)"
         post(data, url: url, onCompletion: onCompletion)
     }
     

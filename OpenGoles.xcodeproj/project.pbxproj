@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		D3157AC41DBBBB86003A7577 /* MatchDetailsIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AC31DBBBB86003A7577 /* MatchDetailsIC.swift */; };
 		D3157AC61DBBBDDD003A7577 /* DetailRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AC51DBBBDDD003A7577 /* DetailRowController.swift */; };
+		D3157AC81DBBC805003A7577 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AC71DBBC805003A7577 /* LocalStorageManager.swift */; };
+		D3157ACA1DBBCBBF003A7577 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AC91DBBCBBF003A7577 /* MatchCell.swift */; };
+		D3157ACE1DBBD60C003A7577 /* LeagueSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157ACD1DBBD60C003A7577 /* LeagueSelectorVC.swift */; };
+		D3157AD41DBBE3C8003A7577 /* GolesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */; };
+		D3157AD51DBBE3C8003A7577 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD21DBBE3C8003A7577 /* League.swift */; };
+		D3157AD61DBBE3C8003A7577 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD31DBBE3C8003A7577 /* Match.swift */; };
+		D3157AD71DBBE3EB003A7577 /* GolesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */; };
 		D3F662D11DBB5A71009A56ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D01DBB5A71009A56ED /* AppDelegate.swift */; };
 		D3F662D31DBB5A71009A56ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D21DBB5A71009A56ED /* FirstViewController.swift */; };
 		D3F662D51DBB5A71009A56ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D41DBB5A71009A56ED /* SecondViewController.swift */; };
 		D3F662D81DBB5A71009A56ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F662D61DBB5A71009A56ED /* Main.storyboard */; };
 		D3F662DA1DBB5A71009A56ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F662D91DBB5A71009A56ED /* Assets.xcassets */; };
 		D3F662DD1DBB5A71009A56ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F662DB1DBB5A71009A56ED /* LaunchScreen.storyboard */; };
-		D3F662E91DBB5AD3009A56ED /* GolesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662E81DBB5AD3009A56ED /* GolesAPI.swift */; };
 		D3F662F01DBB6151009A56ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F662EE1DBB6151009A56ED /* Interface.storyboard */; };
 		D3F662F21DBB6151009A56ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F662F11DBB6151009A56ED /* Assets.xcassets */; };
 		D3F662F91DBB6151009A56ED /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3F662F81DBB6151009A56ED /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -25,7 +31,6 @@
 		D3F663061DBB6151009A56ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F663051DBB6151009A56ED /* Assets.xcassets */; };
 		D3F6630A1DBB6151009A56ED /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D3F662EC1DBB6151009A56ED /* watch.app */; };
 		D3F663141DBB672E009A56ED /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F663131DBB672E009A56ED /* RowController.swift */; };
-		D3F663151DBB7179009A56ED /* GolesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662E81DBB5AD3009A56ED /* GolesAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,12 @@
 /* Begin PBXFileReference section */
 		D3157AC31DBBBB86003A7577 /* MatchDetailsIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsIC.swift; sourceTree = "<group>"; };
 		D3157AC51DBBBDDD003A7577 /* DetailRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRowController.swift; sourceTree = "<group>"; };
+		D3157AC71DBBC805003A7577 /* LocalStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		D3157AC91DBBCBBF003A7577 /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		D3157ACD1DBBD60C003A7577 /* LeagueSelectorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueSelectorVC.swift; sourceTree = "<group>"; };
+		D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GolesAPI.swift; path = GolesAPI/GolesAPI.swift; sourceTree = "<group>"; };
+		D3157AD21DBBE3C8003A7577 /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = League.swift; path = GolesAPI/League.swift; sourceTree = "<group>"; };
+		D3157AD31DBBE3C8003A7577 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = GolesAPI/Match.swift; sourceTree = "<group>"; };
 		D3F662CD1DBB5A71009A56ED /* OpenGoles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGoles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F662D01DBB5A71009A56ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3F662D21DBB5A71009A56ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +92,6 @@
 		D3F662D91DBB5A71009A56ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3F662DC1DBB5A71009A56ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3F662DE1DBB5A71009A56ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3F662E81DBB5AD3009A56ED /* GolesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolesAPI.swift; sourceTree = "<group>"; };
 		D3F662EC1DBB6151009A56ED /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F662EF1DBB6151009A56ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D3F662F11DBB6151009A56ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,13 +148,16 @@
 		D3F662CF1DBB5A71009A56ED /* OpenGoles */ = {
 			isa = PBXGroup;
 			children = (
+				D3157AC91DBBCBBF003A7577 /* MatchCell.swift */,
 				D3F662D01DBB5A71009A56ED /* AppDelegate.swift */,
 				D3F662D21DBB5A71009A56ED /* FirstViewController.swift */,
 				D3F662D41DBB5A71009A56ED /* SecondViewController.swift */,
+				D3157ACD1DBBD60C003A7577 /* LeagueSelectorVC.swift */,
 				D3F662D61DBB5A71009A56ED /* Main.storyboard */,
 				D3F662D91DBB5A71009A56ED /* Assets.xcassets */,
 				D3F662DB1DBB5A71009A56ED /* LaunchScreen.storyboard */,
 				D3F662DE1DBB5A71009A56ED /* Info.plist */,
+				D3157AC71DBBC805003A7577 /* LocalStorageManager.swift */,
 			);
 			path = OpenGoles;
 			sourceTree = "<group>";
@@ -152,7 +165,9 @@
 		D3F662E51DBB5A9A009A56ED /* GolesAPI */ = {
 			isa = PBXGroup;
 			children = (
-				D3F662E81DBB5AD3009A56ED /* GolesAPI.swift */,
+				D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */,
+				D3157AD21DBBE3C8003A7577 /* League.swift */,
+				D3157AD31DBBE3C8003A7577 /* Match.swift */,
 			);
 			name = GolesAPI;
 			sourceTree = "<group>";
@@ -330,9 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F662D51DBB5A71009A56ED /* SecondViewController.swift in Sources */,
-				D3F662E91DBB5AD3009A56ED /* GolesAPI.swift in Sources */,
+				D3157AC81DBBC805003A7577 /* LocalStorageManager.swift in Sources */,
+				D3157AD61DBBE3C8003A7577 /* Match.swift in Sources */,
+				D3157AD51DBBE3C8003A7577 /* League.swift in Sources */,
+				D3157ACA1DBBCBBF003A7577 /* MatchCell.swift in Sources */,
+				D3157AD41DBBE3C8003A7577 /* GolesAPI.swift in Sources */,
 				D3F662D11DBB5A71009A56ED /* AppDelegate.swift in Sources */,
 				D3F662D31DBB5A71009A56ED /* FirstViewController.swift in Sources */,
+				D3157ACE1DBBD60C003A7577 /* LeagueSelectorVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F663151DBB7179009A56ED /* GolesAPI.swift in Sources */,
+				D3157AD71DBBE3EB003A7577 /* GolesAPI.swift in Sources */,
 				D3F663041DBB6151009A56ED /* NotificationController.swift in Sources */,
 				D3157AC41DBBBB86003A7577 /* MatchDetailsIC.swift in Sources */,
 				D3F663021DBB6151009A56ED /* ExtensionDelegate.swift in Sources */,

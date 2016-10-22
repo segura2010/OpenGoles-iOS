@@ -20,7 +20,7 @@ class InterfaceController: WKInterfaceController {
     
     var session = WCSession.default()
     
-    var leagueId = 1
+    var leagueId = 0
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -32,6 +32,12 @@ class InterfaceController: WKInterfaceController {
         session.delegate = self
         session.activate()
         
+        if leagueId != 0{
+            getNextLeagueFixtures()
+        }
+        
+        addMenuItem(with: .more, title: "Refresh", action: #selector(refreshLeague))
+        
     }
     
     override func willActivate() {
@@ -42,6 +48,10 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    func refreshLeague(){
+        self.session.sendMessage(["league":0], replyHandler: nil, errorHandler: nil)
     }
     
     func getNextLeagueFixtures() {

@@ -74,8 +74,8 @@ extension AppDelegate: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         
         if let reference = message["league"] as? Int {
-            
-            session.sendMessage(["league":1], replyHandler: nil, errorHandler: nil)
+            let leagueId = LocalStorageManager.sharedInstance.getLeague()
+            session.sendMessage(["league":leagueId], replyHandler: nil, errorHandler: nil)
             
         }else{
             session.sendMessage(["error":"nothing"], replyHandler: nil, errorHandler: nil)

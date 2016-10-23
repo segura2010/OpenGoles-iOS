@@ -16,6 +16,8 @@
 		D3157AD51DBBE3C8003A7577 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD21DBBE3C8003A7577 /* League.swift */; };
 		D3157AD61DBBE3C8003A7577 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD31DBBE3C8003A7577 /* Match.swift */; };
 		D3157AD71DBBE3EB003A7577 /* GolesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */; };
+		D334ACAE1DBD31FC0076617B /* ClassificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D334ACAD1DBD31FC0076617B /* ClassificationRow.swift */; };
+		D334ACB01DBD327E0076617B /* ClassificationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D334ACAF1DBD327E0076617B /* ClassificationInterfaceController.swift */; };
 		D3F662D11DBB5A71009A56ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D01DBB5A71009A56ED /* AppDelegate.swift */; };
 		D3F662D31DBB5A71009A56ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D21DBB5A71009A56ED /* FirstViewController.swift */; };
 		D3F662D51DBB5A71009A56ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D41DBB5A71009A56ED /* SecondViewController.swift */; };
@@ -84,6 +86,8 @@
 		D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GolesAPI.swift; path = GolesAPI/GolesAPI.swift; sourceTree = "<group>"; };
 		D3157AD21DBBE3C8003A7577 /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = League.swift; path = GolesAPI/League.swift; sourceTree = "<group>"; };
 		D3157AD31DBBE3C8003A7577 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = GolesAPI/Match.swift; sourceTree = "<group>"; };
+		D334ACAD1DBD31FC0076617B /* ClassificationRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationRow.swift; sourceTree = "<group>"; };
+		D334ACAF1DBD327E0076617B /* ClassificationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationInterfaceController.swift; sourceTree = "<group>"; };
 		D3F662CD1DBB5A71009A56ED /* OpenGoles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGoles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F662D01DBB5A71009A56ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3F662D21DBB5A71009A56ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -187,8 +191,10 @@
 			children = (
 				D3F663131DBB672E009A56ED /* RowController.swift */,
 				D3157AC51DBBBDDD003A7577 /* DetailRowController.swift */,
+				D334ACAD1DBD31FC0076617B /* ClassificationRow.swift */,
 				D3F662FF1DBB6151009A56ED /* InterfaceController.swift */,
 				D3157AC31DBBBB86003A7577 /* MatchDetailsIC.swift */,
+				D334ACAF1DBD327E0076617B /* ClassificationInterfaceController.swift */,
 				D3F663011DBB6151009A56ED /* ExtensionDelegate.swift */,
 				D3F663031DBB6151009A56ED /* NotificationController.swift */,
 				D3F663051DBB6151009A56ED /* Assets.xcassets */,
@@ -362,10 +368,12 @@
 			files = (
 				D3157AD71DBBE3EB003A7577 /* GolesAPI.swift in Sources */,
 				D3F663041DBB6151009A56ED /* NotificationController.swift in Sources */,
+				D334ACB01DBD327E0076617B /* ClassificationInterfaceController.swift in Sources */,
 				D3157AC41DBBBB86003A7577 /* MatchDetailsIC.swift in Sources */,
 				D3F663021DBB6151009A56ED /* ExtensionDelegate.swift in Sources */,
 				D3F663141DBB672E009A56ED /* RowController.swift in Sources */,
 				D3157AC61DBBBDDD003A7577 /* DetailRowController.swift in Sources */,
+				D334ACAE1DBD31FC0076617B /* ClassificationRow.swift in Sources */,
 				D3F663001DBB6151009A56ED /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

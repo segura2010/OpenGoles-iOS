@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "session(_:didReceiveMessage:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "session(_:activationDidCompleteWith:error:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "session(_:didReceiveMessage:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "getNextLeagueFixtures()"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "getNextLeagueFixtures()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "getNextLeagueFixtures()"
             landmarkType = "7">
             <Locations>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "getNextLeagueFixtures()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "getNextLeagueFixtures()"
             landmarkType = "7">
             <Locations>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "reloadTableData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "getShortName(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "reloadTableData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "reloadTableData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "watch Extension/InterfaceController.swift"
-            timestampString = "498852657.055632"
+            timestampString = "498940588.880637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "reloadTableData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -464,6 +464,118 @@
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/ClassificationInterfaceController.swift"
+            timestampString = "498939790.644989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "reloadTableData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/ClassificationInterfaceController.swift"
+            timestampString = "498939792.573429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "awake(withContext:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/InterfaceController.swift"
+            timestampString = "498940588.880637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "getNextLeagueFixtures()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "watch_Extension.InterfaceController.(getNextLeagueFixtures () -&gt; ()).(closure #1)"
+                  moduleName = "watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alberto/Desktop/Swift%20Prueba/OpenGoles/watch%20Extension/InterfaceController.swift"
+                  timestampString = "498940299.209319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1535">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "watch_Extension.InterfaceController.(getNextLeagueFixtures () -&gt; ()).(closure #1)"
+                  moduleName = "watch Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alberto/Desktop/Swift%20Prueba/OpenGoles/watch%20Extension/InterfaceController.swift"
+                  timestampString = "498940299.211605"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "2069">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/InterfaceController.swift"
+            timestampString = "498940588.880637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "refreshLeague()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "watch Extension/InterfaceController.swift"
+            timestampString = "498940588.880637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "getNextLeagueFixtures()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

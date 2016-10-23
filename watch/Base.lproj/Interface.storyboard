@@ -5,6 +5,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
+        <!--classificationInterface-->
+        <scene sceneID="0vI-7c-oeG">
+            <objects>
+                <controller identifier="classificationInterface" id="py5-4e-uVI" customClass="ClassificationInterfaceController" customModule="watch_Extension">
+                    <items>
+                        <table alignment="left" id="1d3-f3-FgI">
+                            <items>
+                                <tableRow identifier="row" id="cnJ-qE-9aD" customClass="ClassificationRow" customModule="watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="X3g-br-jjy">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="P. Team" textAlignment="center" id="D4W-3O-9Fe"/>
+                                            <label alignment="right" verticalAlignment="center" text="pts" textAlignment="center" id="hHs-dL-ZfW"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="pointsLbl" destination="hHs-dL-ZfW" id="bCu-rq-Zzv"/>
+                                        <outlet property="teamLbl" destination="D4W-3O-9Fe" id="8YH-Dy-ji0"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="1d3-f3-FgI" id="o8y-lC-bnR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="72"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
@@ -72,7 +101,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="463" y="338"/>
+            <point key="canvasLocation" x="468" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

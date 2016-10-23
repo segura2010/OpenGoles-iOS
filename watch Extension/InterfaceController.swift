@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var loadingLbl: WKInterfaceLabel!
     
     var fixturesList = [String:AnyObject]()
+    var classification = [[String:AnyObject]]()
     
     var session = WCSession.default()
     
@@ -36,7 +37,8 @@ class InterfaceController: WKInterfaceController {
             getNextLeagueFixtures()
         }
         
-        addMenuItem(with: .more, title: "Refresh", action: #selector(refreshLeague))
+        addMenuItem(with: .resume, title: "Refresh", action: #selector(refreshLeague))
+        addMenuItem(with: .more, title: "Classification", action: #selector(showClassification))
         
     }
     
@@ -51,7 +53,16 @@ class InterfaceController: WKInterfaceController {
     }
     
     func refreshLeague(){
-        self.session.sendMessage(["league":0], replyHandler: nil, errorHandler: nil)
+        if self.session.activationState == .activated && self.session.isReachable{
+            self.loadingLbl.setHidden(false)
+            self.session.sendMessage(["league":0], replyHandler: nil, errorHandler: nil)
+        }else{
+            getNextLeagueFixtures()
+        }
+    }
+    
+    func showClassification(){
+        self.presentController(withName: "classificationInterface", context: classification)
     }
     
     func getNextLeagueFixtures() {
@@ -71,6 +82,12 @@ class InterfaceController: WKInterfaceController {
                         self.loadingLbl.setHidden(true)
                         self.reloadTableData()
                     })
+                }
+            }
+            
+            if let classif = resp?["classification"] as? [String:AnyObject]{
+                if let classifs = classif["classifications"] as? [[String:AnyObject]]{
+                    self.classification = classifs
                 }
             }
             

@@ -13,5 +13,6 @@ import WatchKit
 class DetailRowController: NSObject{
     @IBOutlet var eventDescriptionLbl: WKInterfaceLabel!
     @IBOutlet var eventTimeLbl: WKInterfaceLabel!
+    @IBOutlet var image: WKInterfaceImage!
     
 }

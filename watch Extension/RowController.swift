@@ -13,5 +13,6 @@ import WatchKit
 class RowController: NSObject{
     @IBOutlet var matchLbl: WKInterfaceLabel!
     @IBOutlet var dateLbl: WKInterfaceLabel!
+    @IBOutlet var tvLbl: WKInterfaceLabel!
     
 }

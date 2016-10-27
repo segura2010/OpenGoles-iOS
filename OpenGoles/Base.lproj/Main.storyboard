@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Matches-->
+        <!--Partidos-->
         <scene sceneID="ROX-Ag-mSX">
             <objects>
                 <tableViewController id="lWs-kD-Xre" customClass="FirstViewController" customModule="OpenGoles" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0eU-gW-7QP" id="Nkl-oc-bmV">
-                                    <frame key="frameInset" width="375" height="56"/>
+                                    <frame key="frameInset" width="375" height="56.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A - B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISK-7y-1B7">
@@ -70,9 +70,9 @@
                             <outlet property="delegate" destination="lWs-kD-Xre" id="mFt-v3-kCB"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Matches" id="gMi-T0-cxO"/>
-                    <navigationItem key="navigationItem" title="Matches" id="P9h-4c-HRU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="W9j-dI-eih">
+                    <tabBarItem key="tabBarItem" title="Partidos" image="ball" id="gMi-T0-cxO"/>
+                    <navigationItem key="navigationItem" title="Partidos" id="P9h-4c-HRU">
+                        <barButtonItem key="leftBarButtonItem" image="list" id="W9j-dI-eih">
                             <connections>
                                 <action selector="configureLeagueBtnClick:" destination="lWs-kD-Xre" id="MBd-e6-TYc"/>
                             </connections>
@@ -102,7 +102,13 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="068-mg-O31">
                                 <items>
-                                    <navigationItem title="Select default league" id="aie-5n-dWU"/>
+                                    <navigationItem title="Select default league" id="aie-5n-dWU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="JXU-8Y-ic2">
+                                            <connections>
+                                                <action selector="closeBtnClick:" destination="2QT-JF-bJ1" id="YPF-J5-QyF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Egy-sI-AKp">
@@ -112,7 +118,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ue-HE-LiI" id="4hd-40-B2a">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -138,11 +144,11 @@
             </objects>
             <point key="canvasLocation" x="1560.8" y="-960.2698650674663"/>
         </scene>
-        <!--Matches-->
+        <!--Partidos-->
         <scene sceneID="7ZK-ce-TT4">
             <objects>
                 <navigationController id="IqI-A4-1Xk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Matches" id="4gL-S9-wb0"/>
+                    <tabBarItem key="tabBarItem" title="Partidos" image="ball" id="4gL-S9-wb0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OJ2-Cq-IZj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -155,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-313"/>
         </scene>
-        <!--Settings-->
+        <!--Ajustes-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="OpenGoles" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,7 +193,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="settings" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,6 +220,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="ball" width="25" height="25"/>
+        <image name="list" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
     </resources>
 </document>

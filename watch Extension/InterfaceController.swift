@@ -112,6 +112,7 @@ class InterfaceController: WKInterfaceController {
                 let row = tableView.rowController(at: i) as? RowController
                 let local = getShortName(fixtures[i]["teamLocal"] as! String).uppercased()
                 let visitor = getShortName(fixtures[i]["teamVisitor"] as! String).uppercased()
+                let tv = fixtures[i]["listTV"] as! String
                 
                 let secondsDate = ((fixtures[i]["dateMatch"] as! Int) / 1000) - (3600 * 15) // to seconds and substract 15 hours
                 let matchDate = Date(timeIntervalSince1970: TimeInterval(secondsDate))
@@ -138,6 +139,7 @@ class InterfaceController: WKInterfaceController {
                 
                 row?.matchLbl.setText(text)
                 row?.dateLbl.setText(dateStr)
+                row?.tvLbl.setText(tv)
             }
         }
     }

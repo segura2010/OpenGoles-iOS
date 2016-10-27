@@ -23,6 +23,9 @@ class FirstViewController: UITableViewController {
     
     func refreshData(){
         idLeague = LocalStorageManager.sharedInstance.getLeague()
+        if idLeague < 1{
+            idLeague = 1
+        }
         GolesAPI.sharedInstance.getNextFixtures(idLeague) { (err, resp) in
             
             if err != nil{

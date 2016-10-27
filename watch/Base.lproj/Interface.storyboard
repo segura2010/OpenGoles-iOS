@@ -43,8 +43,11 @@
                         <table alignment="left" id="8Ts-Qi-3Vf">
                             <items>
                                 <tableRow identifier="row" id="kCz-yn-PsF" customClass="RowController" customModule="watch_Extension">
-                                    <group key="rootItem" width="1" height="48" alignment="left" layout="vertical" id="W0v-E0-u07">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="W0v-E0-u07">
                                         <items>
+                                            <label alignment="left" text="Label" id="BCn-95-E7O">
+                                                <fontDescription key="font" type="system" pointSize="8"/>
+                                            </label>
                                             <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="wCk-rE-mSk"/>
                                             <label alignment="right" verticalAlignment="bottom" text="Date" id="juv-0v-5Ya">
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
@@ -57,6 +60,7 @@
                                     <connections>
                                         <outlet property="dateLbl" destination="juv-0v-5Ya" id="LOv-qJ-qoe"/>
                                         <outlet property="matchLbl" destination="wCk-rE-mSk" id="Hce-F7-Vdt"/>
+                                        <outlet property="tvLbl" destination="BCn-95-E7O" id="SZ9-NX-ope"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -84,12 +88,18 @@
                                             <label alignment="right" verticalAlignment="bottom" text="Label" id="yIm-FZ-iX9">
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
-                                            <label alignment="left" text="Label" numberOfLines="5" id="FkD-ut-50S"/>
+                                            <group alignment="left" id="FDd-MX-Qnu">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Label" textAlignment="left" numberOfLines="5" id="FkD-ut-50S"/>
+                                                    <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="red_card" id="BXw-v7-Qdp"/>
+                                                </items>
+                                            </group>
                                         </items>
                                     </group>
                                     <connections>
                                         <outlet property="eventDescriptionLbl" destination="FkD-ut-50S" id="bHI-bv-Vth"/>
                                         <outlet property="eventTimeLbl" destination="yIm-FZ-iX9" id="IR3-G0-lgX"/>
+                                        <outlet property="image" destination="BXw-v7-Qdp" id="Uxf-hM-Fq9"/>
                                     </connections>
                                 </tableRow>
                             </items>

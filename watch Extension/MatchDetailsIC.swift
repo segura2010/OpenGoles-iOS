@@ -43,6 +43,7 @@ class MatchDetailsIC: WKInterfaceController {
     }
     
     func reloadTableData(){
+        
         if let events = matchDetails["eventList"] as? [[String:AnyObject]]{
             
             goalsTable.setNumberOfRows(events.count, withRowType: "row")
@@ -54,15 +55,20 @@ class MatchDetailsIC: WKInterfaceController {
                 let row = goalsTable.rowController(at: i) as? DetailRowController
                 
                 let eventType = events[i]["idEvent"] as! Int
+                row?.image.setHidden(false)
                 switch eventType {
                 case EventType.yellowCard.rawValue:
                     row?.eventDescriptionLbl.setTextColor(UIColor.yellow)
+                    row?.image.setImage(#imageLiteral(resourceName: "yellow_card"))
                 case EventType.redCard.rawValue:
                     row?.eventDescriptionLbl.setTextColor(UIColor.red)
+                    row?.image.setImage(#imageLiteral(resourceName: "red_card"))
                 case EventType.goal.rawValue:
                     row?.eventDescriptionLbl.setTextColor(UIColor.cyan)
+                    row?.image.setImage(#imageLiteral(resourceName: "goal_ball"))
                 default:
                     row?.eventDescriptionLbl.setTextColor(UIColor.white)
+                    row?.image.setHidden(true)
                 }
                 
                 row?.eventDescriptionLbl.setText(desc)
@@ -72,6 +78,38 @@ class MatchDetailsIC: WKInterfaceController {
             
         }else{
             goalsTable.setNumberOfRows(0, withRowType: "row")
+        }
+    }
+    
+    func reloadTableTestData(){
+        // For testing..
+        let simulationRows = 20
+        goalsTable.setNumberOfRows(simulationRows, withRowType: "row")
+            
+        for i in (0..<simulationRows){
+            let desc = "Expulsión de Pepe (R.Madrid)"
+            let min = "5"
+            let row = goalsTable.rowController(at: i) as? DetailRowController
+            
+            let eventType = i
+            row?.image.setHidden(false)
+            switch eventType {
+            case EventType.yellowCard.rawValue:
+                row?.eventDescriptionLbl.setTextColor(UIColor.yellow)
+                row?.image.setImage(#imageLiteral(resourceName: "yellow_card"))
+            case EventType.redCard.rawValue:
+                row?.eventDescriptionLbl.setTextColor(UIColor.red)
+                row?.image.setImage(#imageLiteral(resourceName: "red_card"))
+            case EventType.goal.rawValue:
+                row?.eventDescriptionLbl.setTextColor(UIColor.cyan)
+                row?.image.setImage(#imageLiteral(resourceName: "goal_ball"))
+            default:
+                row?.eventDescriptionLbl.setTextColor(UIColor.white)
+                row?.image.setHidden(true)
+            }
+            
+            row?.eventDescriptionLbl.setText(desc)
+            row?.eventTimeLbl.setText("\(min)'")
         }
     }
     

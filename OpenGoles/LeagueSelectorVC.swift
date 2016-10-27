@@ -72,4 +72,9 @@ class LeagueSelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
     
+    @IBAction func closeBtnClick(_ sender: AnyObject) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
 }

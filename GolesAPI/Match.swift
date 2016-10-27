@@ -10,6 +10,7 @@ import Foundation
 
 class Match{
     
+    var id:Int!
     var score:String!
     var local:String!
     var visitor:String!
@@ -21,6 +22,7 @@ class Match{
     
     init(_ d: [String:AnyObject]){
         
+        id = d["idMatch"] as! Int
         score = d["score"] as! String
         local = d["teamLocal"] as! String
         visitor = d["teamVisitor"] as! String
@@ -33,6 +35,25 @@ class Match{
         
         let secondsDate = ((d["dateMatch"] as! Int) / 1000) //- (3600 * 15) // to seconds and substract 15 hours
         date = Date(timeIntervalSince1970: TimeInterval(secondsDate))
+        
+    }
+    
+}
+
+class MatchEvent{
+    
+    var description:String!
+    var minute:String!
+    var eventType:Int!
+    
+    
+    init(_ d: [String:AnyObject]){
+        
+        let eventMessageList = d["eventMessageList"] as? [[String:AnyObject]]
+        description = eventMessageList?[0]["description"] as! String
+        minute = d["timeMatch"] as! String
+        
+        eventType = d["idEvent"] as! Int
         
     }
     

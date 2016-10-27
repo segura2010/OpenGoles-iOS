@@ -82,6 +82,21 @@ class FirstViewController: UITableViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let MDetailsVC = segue.destination as! MatchDetailsVC
+        if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+            if((indexPath as NSIndexPath).row < matches.count){
+                let m = matches[(indexPath as NSIndexPath).row]
+                MDetailsVC.match = m
+            }
+        }
+        
+    }
+    
+    
     @IBAction func configureLeagueBtnClick(_ sender: UIBarButtonItem) {
         
         let leagueSelectorVC = storyboard?.instantiateViewController(withIdentifier: "leagueSelectorVC") as! LeagueSelectorVC

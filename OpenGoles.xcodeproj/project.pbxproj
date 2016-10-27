@@ -18,6 +18,8 @@
 		D3157AD71DBBE3EB003A7577 /* GolesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3157AD11DBBE3C8003A7577 /* GolesAPI.swift */; };
 		D334ACAE1DBD31FC0076617B /* ClassificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D334ACAD1DBD31FC0076617B /* ClassificationRow.swift */; };
 		D334ACB01DBD327E0076617B /* ClassificationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D334ACAF1DBD327E0076617B /* ClassificationInterfaceController.swift */; };
+		D335A6431DC2669400C73C05 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335A6421DC2669400C73C05 /* DetailCell.swift */; };
+		D335A6451DC266D400C73C05 /* MatchDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335A6441DC266D400C73C05 /* MatchDetailsVC.swift */; };
 		D3F662D11DBB5A71009A56ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D01DBB5A71009A56ED /* AppDelegate.swift */; };
 		D3F662D31DBB5A71009A56ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D21DBB5A71009A56ED /* FirstViewController.swift */; };
 		D3F662D51DBB5A71009A56ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F662D41DBB5A71009A56ED /* SecondViewController.swift */; };
@@ -88,6 +90,8 @@
 		D3157AD31DBBE3C8003A7577 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = GolesAPI/Match.swift; sourceTree = "<group>"; };
 		D334ACAD1DBD31FC0076617B /* ClassificationRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationRow.swift; sourceTree = "<group>"; };
 		D334ACAF1DBD327E0076617B /* ClassificationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationInterfaceController.swift; sourceTree = "<group>"; };
+		D335A6421DC2669400C73C05 /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		D335A6441DC266D400C73C05 /* MatchDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsVC.swift; sourceTree = "<group>"; };
 		D3F662CD1DBB5A71009A56ED /* OpenGoles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGoles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F662D01DBB5A71009A56ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3F662D21DBB5A71009A56ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -153,10 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				D3157AC91DBBCBBF003A7577 /* MatchCell.swift */,
+				D335A6421DC2669400C73C05 /* DetailCell.swift */,
 				D3F662D01DBB5A71009A56ED /* AppDelegate.swift */,
 				D3F662D21DBB5A71009A56ED /* FirstViewController.swift */,
 				D3F662D41DBB5A71009A56ED /* SecondViewController.swift */,
 				D3157ACD1DBBD60C003A7577 /* LeagueSelectorVC.swift */,
+				D335A6441DC266D400C73C05 /* MatchDetailsVC.swift */,
 				D3F662D61DBB5A71009A56ED /* Main.storyboard */,
 				D3F662D91DBB5A71009A56ED /* Assets.xcassets */,
 				D3F662DB1DBB5A71009A56ED /* LaunchScreen.storyboard */,
@@ -350,12 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D335A6431DC2669400C73C05 /* DetailCell.swift in Sources */,
 				D3F662D51DBB5A71009A56ED /* SecondViewController.swift in Sources */,
 				D3157AC81DBBC805003A7577 /* LocalStorageManager.swift in Sources */,
 				D3157AD61DBBE3C8003A7577 /* Match.swift in Sources */,
 				D3157AD51DBBE3C8003A7577 /* League.swift in Sources */,
 				D3157ACA1DBBCBBF003A7577 /* MatchCell.swift in Sources */,
 				D3157AD41DBBE3C8003A7577 /* GolesAPI.swift in Sources */,
+				D335A6451DC266D400C73C05 /* MatchDetailsVC.swift in Sources */,
 				D3F662D11DBB5A71009A56ED /* AppDelegate.swift in Sources */,
 				D3F662D31DBB5A71009A56ED /* FirstViewController.swift in Sources */,
 				D3157ACE1DBBD60C003A7577 /* LeagueSelectorVC.swift in Sources */,

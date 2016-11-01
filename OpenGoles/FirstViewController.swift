@@ -12,6 +12,7 @@ class FirstViewController: UITableViewController {
     
     var idLeague = 1
     var matches = [Match]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,10 @@ class FirstViewController: UITableViewController {
         
         refreshData()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     func refreshData(){
@@ -52,6 +57,7 @@ class FirstViewController: UITableViewController {
                 // Main UI Thread
                 DispatchQueue.main.async(execute: { () -> Void in
                     self.tableView.reloadData()
+                    self.showAnimateTable()
                 })
             }
         }
@@ -100,13 +106,59 @@ class FirstViewController: UITableViewController {
     @IBAction func configureLeagueBtnClick(_ sender: UIBarButtonItem) {
         
         let leagueSelectorVC = storyboard?.instantiateViewController(withIdentifier: "leagueSelectorVC") as! LeagueSelectorVC
-        
         self.present(leagueSelectorVC, animated: true, completion: nil)
+        
         
     }
 
     @IBAction func refreshBtnClick(_ sender: AnyObject) {
-        refreshData()
+        hideAnimateTable()
     }
+    
+    
+    // Funny animations! 
+    // Thanks to: https://github.com/brianadvent/SimpleAnimations
+    func showAnimateTable() {
+        
+        let cells = tableView.visibleCells
+        let tableViewHeight = tableView.bounds.size.height
+        
+        for cell in cells {
+            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+        }
+        
+        var delayCounter = 0
+        for cell in cells {
+            UIView.animate(withDuration: 1.25, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                cell.transform = CGAffineTransform.identity
+                }, completion: nil)
+            delayCounter += 1
+        }
+        
+    }
+    func hideAnimateTable() {
+        
+        let cells = tableView.visibleCells
+        let tableViewHeight = tableView.bounds.size.height
+        
+        var delayCounter = 0
+        for i in (0..<cells.count) {
+            let cell = cells[i]
+            UIView.animate(withDuration: 1.25, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                cell.transform = CGAffineTransform(translationX: 0, y: -tableViewHeight)
+            }){ (success) in
+                cell.transform = CGAffineTransform.identity
+                cell.isHidden = true
+                
+                if i == cells.count-1{
+                    // if is the last cell, reload data
+                    self.refreshData()
+                }
+            }
+            delayCounter += 1
+        }
+        
+    }
+    
 }
 

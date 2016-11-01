@@ -19,6 +19,7 @@ class LeagueSelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.delegate = self
         tableView.dataSource = self
         
+        
         GolesAPI.sharedInstance.getLeagues { (err, resp) in
             if err != nil{
                 self.dismiss(animated: true, completion: nil)

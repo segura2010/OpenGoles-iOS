@@ -99,6 +99,9 @@ class InterfaceController: WKInterfaceController {
         var newName = name.replacingOccurrences(of: " ", with: "")
         newName = newName.replacingOccurrences(of: ".", with: "")
         let endIndex = newName.index(newName.startIndex, offsetBy: 2)
+        if endIndex >= newName.endIndex{
+            return newName
+        }
         return newName[newName.startIndex...endIndex]
         
     }

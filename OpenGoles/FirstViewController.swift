@@ -12,6 +12,7 @@ class FirstViewController: UITableViewController {
     
     var idLeague = 1
     var matches = [Match]()
+    var leagues = [League]()
     
 
     override func viewDidLoad() {
@@ -19,6 +20,21 @@ class FirstViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         refreshData()
+        // get leagues
+        GolesAPI.sharedInstance.getLeagues { (err, resp) in
+            if err != nil{
+                return
+            }
+            
+            if let jsonLeagues = resp?["leagues"] as? [[String:AnyObject]]{
+                self.leagues.removeAll()
+                for l in jsonLeagues{
+                    let newLeague = League(l)
+                    self.leagues.append(newLeague)
+                }
+            }
+            
+        }
         
     }
     
@@ -92,6 +108,19 @@ class FirstViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
+        if segue.identifier == "showLeagueSelector"{
+            var vc = segue.destination as! LeagueSelectorVC
+            // Prepare style
+            var controller = vc.popoverPresentationController
+            controller?.delegate = vc
+            
+            // prepare leagues
+            vc.leagues = self.leagues
+            
+            return
+            
+        }
+        
         let MDetailsVC = segue.destination as! MatchDetailsVC
         if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
             if((indexPath as NSIndexPath).row < matches.count){
@@ -104,16 +133,13 @@ class FirstViewController: UITableViewController {
     
     
     @IBAction func configureLeagueBtnClick(_ sender: UIBarButtonItem) {
-        
-        let leagueSelectorVC = storyboard?.instantiateViewController(withIdentifier: "leagueSelectorVC") as! LeagueSelectorVC
-        self.present(leagueSelectorVC, animated: true, completion: nil)
-        
-        
+        self.performSegue(withIdentifier: "showLeagueSelector", sender: self)
     }
 
     @IBAction func refreshBtnClick(_ sender: AnyObject) {
         hideAnimateTable()
     }
+
     
     
     // Funny animations! 

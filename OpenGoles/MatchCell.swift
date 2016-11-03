@@ -26,7 +26,7 @@ class MatchCell: UITableViewCell {
         
         var score = m.score
         
-        switch m.state {
+        switch m.state! {
         case MatchState.finished.rawValue:
             matchTitleLbl.textColor = UIColor.red
         case MatchState.notStarted.rawValue:

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LeagueSelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class LeagueSelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate{
     @IBOutlet var tableView: UITableView!
     
     var leagues = [League]()
@@ -19,28 +19,10 @@ class LeagueSelectorVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.delegate = self
         tableView.dataSource = self
         
-        
-        GolesAPI.sharedInstance.getLeagues { (err, resp) in
-            if err != nil{
-                self.dismiss(animated: true, completion: nil)
-                return
-            }
-            
-            if let jsonLeagues = resp?["leagues"] as? [[String:AnyObject]]{
-                self.leagues.removeAll()
-                for l in jsonLeagues{
-                    let newLeague = League(l)
-                    self.leagues.append(newLeague)
-                }
-                
-                // Main UI Thread
-                DispatchQueue.main.async(execute: { () -> Void in
-                    self.tableView.reloadData()
-                })
-            }
-            
-        }
-        
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
     
     // TableView Delegate Functions
